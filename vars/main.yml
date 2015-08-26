@@ -1,0 +1,4 @@
+mysql_client_additional_packages:
+  - libmysqlclient-dev
+
+mysql_client_package: mysql-client

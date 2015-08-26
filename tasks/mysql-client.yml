@@ -1,0 +1,6 @@
+- name: Installs mysql client libs
+  apt: pkg={{ mysql_client_package }}-{{ mysql_client_version }} state=installed
+
+- name: Installs additional mysql client libs
+  apt: pkg={{ item }} state=installed
+  with_items: mysql_client_additional_packages
